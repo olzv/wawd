@@ -1,7 +1,11 @@
 #!/bin/bash
 set -e
 
-rails db:create
+# Ensure local DB is created if external DB is not provided
+if [ -z "$DATABASE_URL" ]; then
+    rails db:create
+fi
+
 rails db:migrate:status
 rails db:migrate
 
