@@ -10,12 +10,12 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
 
 RUN gem install bundler
 
-COPY app/Gemfile .
-COPY app/Gemfile.lock .
+COPY Gemfile .
+COPY Gemfile.lock .
 
 RUN bundle install
 
-COPY app /app
+COPY . /app
 
 EXPOSE 3000
 CMD rails s -b 0.0.0.0
