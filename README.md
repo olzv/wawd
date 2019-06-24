@@ -6,5 +6,5 @@ Including:
 2. TODO: cache gems for local env
 3. TODO: add db:create and db:migrate and bundle install into entrypoint script
 
-Follow instructions gere to configure your droplet:
+Follow instructions gere to configure your Heroku app for Docker deployment:
 https://devcenter.heroku.com/articles/build-docker-images-heroku-yml
