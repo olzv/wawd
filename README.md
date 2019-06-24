@@ -1,10 +1,16 @@
 # WAWD
-Rails Web And Worker Dockerized in single container
+
+Notice: the project is not yet fully implemented.
+
+A template Rails project with Web And Worker Dockerized in single container.  
+Especially useful to run on Heroku in scope of single dyno. Such approach will relieve you from running additional Worker node. 
 
 Including:
 1. Configured for default Heroku Postgres database;
 2. TODO: cache gems for local env
-3. TODO: add db:create and db:migrate and bundle install into entrypoint script
+3. Entrypoint script with automatic migration run
+4. TODO: install and configure supervisord
+5. docker-compose.yml for running localy
 
 Follow instructions gere to configure your Heroku app for Docker deployment:
 https://devcenter.heroku.com/articles/build-docker-images-heroku-yml
