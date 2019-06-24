@@ -15,7 +15,10 @@ COPY app/Gemfile.lock .
 
 RUN bundle install
 
+COPY docker-entrypoint.sh /usr/local/bin/
+
 COPY ./app /app
 
 EXPOSE 3000
+ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["rails", "s", "-b", "0.0.0.0"]
