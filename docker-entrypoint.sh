@@ -6,7 +6,6 @@ if [ -z "$DATABASE_URL" ]; then
     rails db:create
 fi
 
-rails db:migrate:status
 rails db:migrate
 
 exec "$@"
