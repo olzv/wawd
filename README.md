@@ -14,3 +14,8 @@ Including:
 
 Follow instructions gere to configure your Heroku app for Docker deployment:
 https://devcenter.heroku.com/articles/build-docker-images-heroku-yml
+
+Notice:
+Remember to add:
+`config.logger = ActiveSupport::TaggedLogging.new(ActiveSupport::Logger.new(STDOUT))`
+to `config/application.rb` in order to allow Puma to write request logs into STDOUT
