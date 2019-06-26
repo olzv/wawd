@@ -8,4 +8,4 @@ build:
     web: Dockerfile
 
 run:
-  web: bundle exec puma -C config/puma.rb
+  web: /usr/bin/supervisord -n -c /etc/supervisord.conf
