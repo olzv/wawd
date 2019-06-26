@@ -15,7 +15,6 @@ services:
       - DATABASE_USERNAME=postgres
     volumes:
       - ./app:/app
-    command: bundle exec puma -C config/puma.rb
 
   db:
     image: postgres:10.3
