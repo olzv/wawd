@@ -19,3 +19,6 @@ Notice:
 Remember to add:
 `config.logger = ActiveSupport::TaggedLogging.new(ActiveSupport::Logger.new(STDOUT))`
 to `config/application.rb` in order to allow Puma to write request logs into STDOUT
+
+(TODO) Run in development:
+...
