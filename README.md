@@ -10,15 +10,15 @@ Including:
 2. Caching gems in case of running with compose
 3. Entrypoint script with automatic migration run and DB creation
 4. Configured supervisord
-4. Adapted to run on Heroku
-5. Included docker-compose.yml for running with docker in self hosted environment
-6. Installed DelayedJob
-6. TODO: Switch to Alpine distribution
-7. TODO: handle a case when running first time. Install Rails automatically then
-6. TODO: consider one click deployments to Heroku and DG
-7. TODO: allow to manage crontab
-9. TODO: allow to specify the url to the repository where to clone from the existing app
-10. TODO: extract the customizations into a separate gem
+5. Adapted to run on Heroku in Docker deployment mode
+6. Included docker-compose.yml for running with Compose in self-hosted environment
+7. Installed and configured DelayedJob
+8. TODO: switch to Alpine distribution
+9. TODO: handle a case when running first time. Install Rails automatically then
+10. TODO: consider one click deployments to Heroku and DG
+11. TODO: allow to manage crontab
+12. TODO: allow to specify the url to the repository where to clone from the existing app
+13. TODO: extract the customizations into a separate gem
 
 Follow instructions gere to configure your Heroku app for Docker deployment:
 https://devcenter.heroku.com/articles/build-docker-images-heroku-yml
