@@ -6,6 +6,8 @@ services:
     tty: true
     build:
       context: .
+      args:
+        bundle_on_build: "false"
     ports:
       - '3000:3000'
     depends_on:
@@ -15,6 +17,7 @@ services:
       - DATABASE_USERNAME=postgres
     volumes:
       - ./app:/app
+      - ./bundle:/bundle
 
   db:
     image: postgres:10.3
