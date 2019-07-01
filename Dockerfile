@@ -12,10 +12,16 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
     apt-get update && \
     apt-get install -y nodejs
 
-ENV BUNDLE_PATH /bundle
-
 ADD supervisor/supervisord.conf /etc/supervisord.conf
 COPY docker-entrypoint.sh /usr/local/bin/
+
+ENV BUNDLE_PATH /bundle
+
+COPY app/Gemfile .
+COPY app/Gemfile.lock .
+
+ARG bundle_on_build
+RUN if [ "$bundle_on_build" != "false" ]; then bundle install; fi
 
 COPY ./app /app
 

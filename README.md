@@ -7,11 +7,13 @@ Especially useful to run on Heroku in scope of single dyno. Such approach will r
 
 Including:
 1. Configured for default Heroku Postgres database;
-2. TODO: cache gems for local env
-3. Entrypoint script with automatic migration run
+2. Caching gems in case of running with compose
+3. Entrypoint script with automatic migration run and DB creation
 4. Configured supervisord
-5. docker-compose.yml for running localy
+4. Adapted to run on Heroku
+5. Included docker-compose.yml for running with docker in self hosted environment
 6. Installed DelayedJob
+6. TODO: Switch to Alpine distribution
 7. TODO: handle a case when running first time. Install Rails automatically then
 6. TODO: consider one click deployments to Heroku and DG
 7. TODO: allow to manage crontab

@@ -6,6 +6,8 @@ services:
     tty: true
     build:
       context: .
+      args:
+        bundle_on_build: "false"
     ports:
       - '3000:3000'
     depends_on:
