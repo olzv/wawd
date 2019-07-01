@@ -12,6 +12,7 @@ Including:
 4. TODO: install and configure supervisord
 5. docker-compose.yml for running localy
 6. TODO: consider one click deployments to Heroku and DG
+7. TODO: allow to manage crontab
 
 Follow instructions gere to configure your Heroku app for Docker deployment:
 https://devcenter.heroku.com/articles/build-docker-images-heroku-yml
