@@ -1,11 +1,15 @@
 #!/bin/bash
 set -e
 
+bundle check || bundle install
+
+chmod -R a+rwX $BUNDLE_PATH
+
 # Ensure local DB is created if external DB is not provided
 if [ -z "$DATABASE_URL" ]; then
-    rails db:create
+    bundle exec rails db:create
 fi
 
-rails db:migrate
+bundle exec rails db:migrate
 
 exec "$@"
