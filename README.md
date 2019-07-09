@@ -6,7 +6,7 @@ A template Rails project with Web And Worker Dockerized in single container.
 Especially useful to run on Heroku in scope of single dyno. Such approach will relieve you from running additional Worker node.
 Meaning you can even run the application on free dyno and keep processing background jobs.
 
-Including:
+#### Including:
 1. Adapted to run on Heroku in [Docker Deployment Mode](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml)
 2. Included docker-compose.yml for running with Docker Compose in self-hosted environment
 3. Configured for default Heroku Postgres database;
@@ -16,6 +16,11 @@ Including:
 7. Installed and configured [DelayedJob](https://github.com/collectiveidea/delayed_job)
 8. Installed a UI for DelayedJob [delayed_job_web](https://github.com/ejschmitt/delayed_job_web)
 
+#### Running in self-hosted env
+`docker-compose up`
+
+#### Deploying to Heroku
+...  
 
 Follow instructions gere to configure your Heroku app for Docker deployment:
 https://devcenter.heroku.com/articles/build-docker-images-heroku-yml
