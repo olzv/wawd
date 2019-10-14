@@ -5,6 +5,9 @@ Notice: the project is not yet fully implemented.
 A template Rails project with Web And Worker Dockerized in single container.  
 Especially useful to run on Heroku in scope of single dyno. Such approach will relieve you from running additional Worker node.
 Meaning you can even run the application on free dyno and keep processing background jobs.
+  
+Find more detailed explanation here:  
+[Dockerized Rails with Background Worker in single container](https://captaintale.com/articles/6-dockerized-rails-with-background-wo)
 
 #### Including:
 1. Adapted to run on Heroku in [Docker Deployment Mode](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml)
